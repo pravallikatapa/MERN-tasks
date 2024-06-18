@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+      table,
+      tr,
+      th,
+      td {
+        border: 2px solid black;
+        border-collapse: collapse;
+      }
+      table{
+        width:700px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      div{
+        text-align: center;
+      }
+      #id{
+        width: 98.5%;
+      }
+      #id1{
+        height: 60px;
+        width: 98.5%;
+        font-weight: bold;
+      }
+      #id2{
+        text-align: end;
+      }
+      #id3{
+        font-weight: bold;
+      }
+    </style>
+</head>
+<body>
+    <h3>Task 5</h3>
+    <h2 style="color: blue; text-align: center;">Registration Form</h2>
+    <form>
+        <table>
+        <tr><td><label for="First name" id="id3">First Name</label></td>
+        <td><input type="text" id="id" name="First name" required></td></tr>
+        <tr><td><label for="Last name" id="id3">Last name</label></td>
+        <td><input type="text" id="id" name="Last name" required></td></tr>
+        <tr><td><label for="email" id="id3">Email</label></td>
+        <td><input type="email" id="id" name="email" required/></td></tr>
+        <tr><td><label for="password" id="id3">Password</label></td>
+        <td><input type="password" id="id" name="password" 
+                pattern="^(?=.*\d)(?=.*[a-zA-Z])(?=.*[^a-zA-Z0-9])\S{8,}$" 
+                title="Password must contain at least one number, one alphabet, 
+                one symbol, and be at least 8 characters long" required/></td></tr>
+        <tr><td><label for="repassword" id="id3">Re-type Password</label></td>
+        <td><input type="password" id="id" name="repassword" required/></td></tr>
+        <tr><td><label for="Gender" id="id3">Gender</label></td>
+            <td><input type="radio" id="Male" name="radioGroup" value="Male">
+            <label for="Male">Male</label><hr>
+            <input type="radio" id="Female" name="radioGroup" value="Female">
+            <label for="Female">Female</label><hr>
+            <input type="radio" id="Other" name="radioGroup" value="Other">
+            <label for="Other">Other</label>
+        </td></tr>
+        <tr><td><label for="Age" id="id3">Age</label></td>
+        <td><input type="number" id="id" name="Age" required></td></tr>
+        <tr><td><label for="mobile" id="id3">Phone Number</label></td>
+        <td><input type="text" id="id" name="mobile" maxlength="10" required/></td></tr>
+        <tr><td><label for="Address" id="id1">Address</label></td>
+        <td><input type="text" id="id1" name="Address" required></td></tr>
+        <tr><td><label for="State" id="id3">State</label></td>
+        <td><input type="text" id="id" name="State" required></td></tr>
+        <tr><td><label for="Country" id="id3">Country</label></td>
+        <td><select id="Country" name="Country" value="Country">
+            <option value="Choose your country">Choose your country</option>
+            <option value="Austria">Austria</option>
+            <option value="Canada">Canada</option>
+            <option value="China">China</option>
+            <option value="England">England</option>
+            <option value="Frence">Frence</option>
+            <option value="India">India</option>
+            <option value="Italy">Italy</option>
+            <option value="Japan">Japan</option>
+            <option value="Norway">Norway</option>
+            <option value="Russia">Russia</option>
+        </select></td></tr>
+        <tr><td><label for="Languages Known" id="id3">Languages Known</label></td>
+        <td><input type="checkbox" name="English" value="yes">English
+            <input type="checkbox" name="Kannada" value="yes">Kannada
+            <input type="checkbox" name="Hindi" value="yes">Hindi
+            <input type="checkbox" name="Telugu" value="yes">Telugu
+        </td></tr>
+        <tr><td colspan="2"><input type="checkbox" name="Hereby I declare all the given details are true" 
+            value="yes" required>Hereby I declare all the given details are true</td></tr>
+        <tr><td colspan="2" id="id2">Log in to <a href="https://ethnus.com/" target="_blank">Ethnus</a> website</td></tr>
+        </table>
+        <br>
+        <div><button type="Register">Register</button></div>
+    </form>
+</body>
+</html>
